@@ -1,0 +1,186 @@
+.home {
+  // position: relative;
+  height: 200vh;
+  .user {
+    height: 30vh;
+    width: 100vw;
+    background: linear-gradient(0, #3a6073, #16222a);
+    padding: 20px;
+    color: aliceblue;
+    font-size: 1.1rem;
+    // border-bottom: 2px solid linear-gradient(0, #3a6073, #16222a);
+    box-shadow: 0px 0px 3px 20px rgb(0, 0, 0);
+    z-index: 6;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.199);
+      border-radius: 10px;
+
+      > input[type="button"] {
+        // margin-left: 50px;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+      }
+
+      > div {
+        > input[type="text"] {
+          margin-left: 50px;
+          width: 180px;
+          height: 40px;
+          font-size: 1rem;
+          transition: 0.5s;
+          border-radius: 20px;
+        }
+        > select {
+          height: 35px;
+          width: 80px;
+          border-radius: 10px;
+          background-color: #0b8793;
+          font-weight: bold;
+        }
+      }
+
+      .info {
+        > p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .contractabi {
+      display: flex;
+      justify-content: flex-end;
+      > p {
+        margin-right: 30px;
+      }
+
+      > select {
+        height: 35px;
+        width: 120px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #0b8793;
+        font-weight: bold;
+      }
+      > option {
+        font-weight: 2rem;
+      }
+    }
+  }
+
+  .txtocontract {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+
+    background: linear-gradient(#3a6073, #16222a);
+    padding: 20px;
+    // z-index: 3;
+
+    .txsetup {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 1200px;
+
+      .contract {
+        height: 200px;
+        width: 100%;
+        border: 1px solid white;
+      }
+
+      .tx {
+        width: 100%;
+
+        > div {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          height: 200px;
+          width: 100%;
+          background: linear-gradient(#3a6073, #16222a);
+          padding-top: 25px;
+          margin: 30px 0 10px 0;
+          border-radius: 20px;
+
+          > h3 {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          > div {
+            width: 100%;
+            // border: 1px solid black;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .methods {
+      position: absolute;
+      height: 30px;
+      width: 100px;
+      top: 260px;
+      left: 60%;
+    }
+  }
+
+  input[type="text"] {
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    background: #0b8793;
+
+    &.destinations {
+      background: #12fff7;
+      border-radius: 20px;
+    }
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: rgb(43, 43, 43);
+      opacity: 1; /* Firefox */
+    }
+
+    &:focus {
+      outline: unset;
+      transition: 0.5s;
+      border-radius: 20px;
+      border-width: 2px;
+      border-style: inset;
+      border-image: unset;
+    }
+  }
+
+  input[type="button"] {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+
+    background: linear-gradient(90deg, #b3ffab, #12fff7);
+
+    &:hover {
+      transform: scale(1.1);
+      // transition: 0.5s;
+      background: linear-gradient(240deg, #b3ffab, #12fff7);
+      filter: brightness(1.1);
+    }
+  }
+}
